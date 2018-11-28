@@ -17,6 +17,7 @@ import Contacts
 
 // MARK: - 服务类型
 enum ServiceType: String {
+    
     /// 相册
     case ServiceTypePhotoAlbum = "ServiceTypePhotoAlbum"
     /// 相机
@@ -35,10 +36,12 @@ enum ServiceType: String {
     case ServiceTypeBluetooth = "ServiceTypeBluetooth"
     /// 通讯录
     case ServiceTypeContacts = "ServiceTypeContacts"
+    
 }
 
 // MARK: - ServiceAuthorizationManager
 class ServiceAuthorizationManager: NSObject, CBCentralManagerDelegate {
+    
     // 蓝牙权限获取回调
     private var completeBluetoothClourse: ((_ result: Bool) -> Void)?
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
@@ -50,10 +53,12 @@ class ServiceAuthorizationManager: NSObject, CBCentralManagerDelegate {
             self.completeBluetoothClourse!(ret)
         }
     }
+    
 }
 
 // MARK: - 权限跳转
 extension ServiceAuthorizationManager {
+    
     // 开启权限
     func turnOnServiceAuthorization() -> () {
         if #available(iOS 10.0, *) {
@@ -202,4 +207,5 @@ private extension ServiceAuthorizationManager {
         
         return false
     }
+    
 }

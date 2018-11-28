@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         self.title = "Swift test";
     }
-
-
+    
 }
 

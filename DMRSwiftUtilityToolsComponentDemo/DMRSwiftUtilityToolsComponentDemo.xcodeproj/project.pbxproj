@@ -14,9 +14,9 @@
 		04122F7621AE44C0009972CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04122F7421AE44C0009972CF /* LaunchScreen.storyboard */; };
 		04122F8121AE44C0009972CF /* DMRSwiftUtilityToolsComponentDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122F8021AE44C0009972CF /* DMRSwiftUtilityToolsComponentDemoTests.swift */; };
 		04122F8C21AE44C0009972CF /* DMRSwiftUtilityToolsComponentDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122F8B21AE44C0009972CF /* DMRSwiftUtilityToolsComponentDemoUITests.swift */; };
-		04122F9C21AE491F009972CF /* HardwareServiceAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122F9B21AE491F009972CF /* HardwareServiceAuthorization.swift */; };
-		04122FA121AE8FF0009972CF /* UIImage+DMRExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122FA021AE8FF0009972CF /* UIImage+DMRExtension.swift */; };
-		04122FA421AE9093009972CF /* String+DMRExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122FA321AE9093009972CF /* String+DMRExtension.swift */; };
+		04122FB021AE98B9009972CF /* UIImage+DMRExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122FAA21AE98B9009972CF /* UIImage+DMRExtension.swift */; };
+		04122FB121AE98B9009972CF /* String+DMRExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122FAD21AE98B9009972CF /* String+DMRExtension.swift */; };
+		04122FB221AE98B9009972CF /* HardwareServiceAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04122FAF21AE98B9009972CF /* HardwareServiceAuthorization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,9 @@
 		04122F8721AE44C0009972CF /* DMRSwiftUtilityToolsComponentDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMRSwiftUtilityToolsComponentDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04122F8B21AE44C0009972CF /* DMRSwiftUtilityToolsComponentDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMRSwiftUtilityToolsComponentDemoUITests.swift; sourceTree = "<group>"; };
 		04122F8D21AE44C0009972CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04122F9B21AE491F009972CF /* HardwareServiceAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareServiceAuthorization.swift; sourceTree = "<group>"; };
-		04122FA021AE8FF0009972CF /* UIImage+DMRExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+DMRExtension.swift"; sourceTree = "<group>"; };
-		04122FA321AE9093009972CF /* String+DMRExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DMRExtension.swift"; sourceTree = "<group>"; };
+		04122FAA21AE98B9009972CF /* UIImage+DMRExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+DMRExtension.swift"; sourceTree = "<group>"; };
+		04122FAD21AE98B9009972CF /* String+DMRExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DMRExtension.swift"; sourceTree = "<group>"; };
+		04122FAF21AE98B9009972CF /* HardwareServiceAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HardwareServiceAuthorization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 		04122F6A21AE44BF009972CF /* DMRSwiftUtilityToolsComponentDemo */ = {
 			isa = PBXGroup;
 			children = (
-				04122F9921AE44E4009972CF /* DMRSwiftUtilityToolsComponent */,
+				04122FA721AE98B9009972CF /* DMRSwiftUtilityToolsComponent */,
 				04122F6B21AE44BF009972CF /* AppDelegate.swift */,
 				04122F6D21AE44BF009972CF /* ViewController.swift */,
 				04122F6F21AE44BF009972CF /* Main.storyboard */,
@@ -132,54 +132,55 @@
 			path = DMRSwiftUtilityToolsComponentDemoUITests;
 			sourceTree = "<group>";
 		};
-		04122F9921AE44E4009972CF /* DMRSwiftUtilityToolsComponent */ = {
+		04122FA721AE98B9009972CF /* DMRSwiftUtilityToolsComponent */ = {
 			isa = PBXGroup;
 			children = (
-				04122F9E21AE8F79009972CF /* Foundation */,
-				04122F9D21AE8F68009972CF /* UIKit */,
-				04122F9A21AE48BD009972CF /* HardwareService */,
+				04122FA821AE98B9009972CF /* UIKit */,
+				04122FAB21AE98B9009972CF /* Foundation */,
+				04122FAE21AE98B9009972CF /* HardwareService */,
 			);
-			path = DMRSwiftUtilityToolsComponent;
+			name = DMRSwiftUtilityToolsComponent;
+			path = ../../DMRSwiftUtilityToolsComponent;
 			sourceTree = "<group>";
 		};
-		04122F9A21AE48BD009972CF /* HardwareService */ = {
+		04122FA821AE98B9009972CF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				04122F9B21AE491F009972CF /* HardwareServiceAuthorization.swift */,
-			);
-			path = HardwareService;
-			sourceTree = "<group>";
-		};
-		04122F9D21AE8F68009972CF /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				04122F9F21AE8F81009972CF /* Extension */,
+				04122FA921AE98B9009972CF /* Extension */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		04122F9E21AE8F79009972CF /* Foundation */ = {
+		04122FA921AE98B9009972CF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				04122FA221AE906F009972CF /* Extension */,
+				04122FAA21AE98B9009972CF /* UIImage+DMRExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		04122FAB21AE98B9009972CF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				04122FAC21AE98B9009972CF /* Extension */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
 		};
-		04122F9F21AE8F81009972CF /* Extension */ = {
+		04122FAC21AE98B9009972CF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				04122FA021AE8FF0009972CF /* UIImage+DMRExtension.swift */,
+				04122FAD21AE98B9009972CF /* String+DMRExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		04122FA221AE906F009972CF /* Extension */ = {
+		04122FAE21AE98B9009972CF /* HardwareService */ = {
 			isa = PBXGroup;
 			children = (
-				04122FA321AE9093009972CF /* String+DMRExtension.swift */,
+				04122FAF21AE98B9009972CF /* HardwareServiceAuthorization.swift */,
 			);
-			path = Extension;
+			path = HardwareService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04122F9C21AE491F009972CF /* HardwareServiceAuthorization.swift in Sources */,
-				04122FA121AE8FF0009972CF /* UIImage+DMRExtension.swift in Sources */,
-				04122FA421AE9093009972CF /* String+DMRExtension.swift in Sources */,
+				04122FB221AE98B9009972CF /* HardwareServiceAuthorization.swift in Sources */,
 				04122F6E21AE44BF009972CF /* ViewController.swift in Sources */,
+				04122FB021AE98B9009972CF /* UIImage+DMRExtension.swift in Sources */,
+				04122FB121AE98B9009972CF /* String+DMRExtension.swift in Sources */,
 				04122F6C21AE44BF009972CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
